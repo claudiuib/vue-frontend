@@ -144,7 +144,7 @@
             },
         //  fetching data from the server
             created :function(){
-                     fetch("https://express-server-cw2.herokuapp.com/lessons")
+                     fetch("http://lessonssapp-env.eba-ukma57zx.eu-west-2.elasticbeanstalk.com/lessons")
                     .then(response => response.json())
                     .then(lessons => {
                     this.lessons = lessons;
